@@ -13,23 +13,24 @@
 .button__operator--colour {
   background-color: #f0a23b;
 }
-.button__operator--corner {
-  border-radius: 0px 0px 15px;
-}
 .button__number--colour {
   background-color: #717172;
 }
 .button__number--corner {
   border-radius: 0px 0px 0px 15px;
 }
-.button__other--colour {
-  background-color: #555556;
-}
 .button__zero--size {
   grid-column: 1/span 2;
 }
+.button__equal--corner {
+  background-color: #f0a23b;
+  border-radius: 0px 0px 15px;
+}
+.button__other--colour {
+  background-color: #555556;
+}
 
-.button-style, .button__operator--colour, .button__number--colour, .button__other--colour {
+.button-style, .button__operator--colour, .button__number--colour, .button__equal--corner, .button__other--colour {
   color: #e9e9e9;
   font-size: 40px;
   font-weight: 400;

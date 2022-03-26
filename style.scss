@@ -20,9 +20,6 @@
             background-color: #f0a23b;
             @extend .button-style;
         }
-        &--corner {
-          border-radius: 0px 0px 15px;
-        }
     }
     &__number {
         &--colour {
@@ -30,18 +27,25 @@
             @extend .button-style;
         }
         &--corner {
-          border-radius: 0px 0px 0px 15px;
+            border-radius: 0px 0px 0px 15px;
+        }
+    }
+    &__zero {
+        &--size {
+            grid-column: 1 / span 2;
+        }
+    }
+    &__equal {
+        &--corner {
+            background-color: #f0a23b;
+            border-radius: 0px 0px 15px;
+            @extend .button-style;
         }
     }
     &__other {
         &--colour {
             background-color: #555556;
             @extend .button-style;
-        }
-    }
-    &__zero {
-        &--size {
-            grid-column: 1 / span 2;
         }
     }
 }

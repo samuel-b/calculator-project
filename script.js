@@ -31,8 +31,6 @@ for (let i = 0; i < operatorButtons.length; i++) {
     operatorButtons[i].addEventListener("click", (e) => {
         //Regex that matches numbers 0-9
         const hasNumber = /[0-9]/;
-        //When an operator button is pressed the numbers that were on the display stores in the previousValue variable.
-        previousValue = Number(display.innerHTML);
         //If the display currently has an operator, prevent another one from being appended.
         if (
             display.innerText.includes("+") ||
@@ -42,10 +40,10 @@ for (let i = 0; i < operatorButtons.length; i++) {
         ) {
             throw "ERROR: Multiple Operators";
         } else if (
-            //length of the calculator length is less than 15 and the display currently has numbers then the chosen operator will be appended to the display.
-            display.innerText.length < 15 &&
+            //If the length of the calculator length is less than 15 and the display currently has numbers then store current numbers on the display in the previousValue variable and append the relevant operator to the display when any operator button is clicked.
             hasNumber.test(display.innerText)
         ) {
+            previousValue = Number(display.innerHTML);
             display.innerText += e.target.innerText;
         }
     });

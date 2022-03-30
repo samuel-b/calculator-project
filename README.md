@@ -1,5 +1,5 @@
 # calculator-project
-https://github.com/samuel-b/calculator-project
+https://samuel-b.github.io/calculator-project/
 
 # Screenshot
 ![Calculator](images/calculator-product-screenshot.png)
